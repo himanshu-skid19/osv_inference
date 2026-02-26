@@ -42,14 +42,14 @@ from evaluate import run_evaluation, aggregate
 
 CHECKPOINT_PATH = (
     r"C:\Users\Himanshu Singhal\Desktop\BTP"
-    r"\osv_finetuning\finetune_runs\run_20260219_102652"
+    r"\osv_finetuning\finetune_runs\run_20260224_194757"
     r"\finetuned_full_weights.pth"
 )
 
 # Enrollment registry produced by writer_enrollment/run_enroll.py
 ENROLLMENT_PATH = (
     r"C:\Users\Himanshu Singhal\Desktop\BTP"
-    r"\writer_enrollment\enrollment_R4_eps0.05_20260220_123659.npz"
+    r"\writer_enrollment\enrollment_R4_eps0.05_20260225_104835.npz" ##<------------UPDATE with your actual enrollment file
 )
 
 TEST_DATA_PATH = (
@@ -60,7 +60,7 @@ TEST_DATA_PATH = (
 OUTPUT_DIR = r"C:\Users\Himanshu Singhal\Desktop\BTP\inference\results"
 
 # Must match the value used in run_enroll.py
-R_ENROLL = 5
+R_ENROLL = 4
 
 # Batch size for encoding queries (reduce if OOM)
 ENCODE_BATCH_SIZE = 128
